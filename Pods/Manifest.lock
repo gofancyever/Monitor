@@ -1,0 +1,56 @@
+PODS:
+  - AMap2DMap (5.6.0):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.5.0)
+  - AMapLocation (2.6.0):
+    - AMapFoundation (~> 1.4)
+  - AMapSearch (6.1.0):
+    - AMapFoundation (~> 1.4)
+  - CenteredCollectionView (2.0.0)
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
+  - Hero (1.2.0)
+  - IBAnimatable (5.1.0)
+  - Reusable (4.0.2):
+    - Reusable/Storyboard (= 4.0.2)
+    - Reusable/View (= 4.0.2)
+  - Reusable/Storyboard (4.0.2)
+  - Reusable/View (4.0.2)
+
+DEPENDENCIES:
+  - AMap2DMap
+  - AMapLocation
+  - AMapSearch
+  - CenteredCollectionView
+  - Charts
+  - Hero
+  - IBAnimatable
+  - Reusable
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AMap2DMap
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
+    - CenteredCollectionView
+    - Charts
+    - Hero
+    - IBAnimatable
+    - Reusable
+
+SPEC CHECKSUMS:
+  AMap2DMap: cf0bfd6ae97951b55cc061903b814f924ba6c221
+  AMapFoundation: 04fc43736ed63bed15d502e20f74ded399991f1e
+  AMapLocation: 55116a2c8956eab7550cbb56e989aa5cdcc424e3
+  AMapSearch: e3f96bd0681abe70abba303709a1a05625a8f76c
+  CenteredCollectionView: 6548b515645aea6ea89618f4b5ca090191dc8628
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
+  IBAnimatable: dd81f8f22e9982b05e8ac50794e4c8988cc300f2
+  Reusable: 584a5629747c52e0f6a77841b400dc2643f6fa0f
+
+PODFILE CHECKSUM: 38d565cd139f6d7e8fa5b31a74ac5e82dd68a02e
+
+COCOAPODS: 1.5.0

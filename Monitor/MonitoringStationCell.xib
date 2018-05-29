@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MonitoringStationCell" rowHeight="126" id="KGk-i7-Jjw" customClass="MonitoringStationCell" customModule="Monitor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="759" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="759" height="125.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvz-va-6Ux" customClass="AnimatableView" customModule="IBAnimatable">
+                        <rect key="frame" x="20" y="11" width="719" height="104"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corn-icon" translatesAutoresizingMaskIntoConstraints="NO" id="DKO-IW-mBo">
+                                <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dSh-0O-IEL"/>
+                                    <constraint firstAttribute="width" constant="50" id="zPY-nO-BJp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张店镇半沟村-土地1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgm-68-QWB">
+                                <rect key="frame" x="73" y="16" width="127.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玉米" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBN-bV-YGt">
+                                <rect key="frame" x="73" y="41" width="25" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="FoT-bK-DJD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.52549019607843139" green="0.52549019607843139" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8m/s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uK3-hx-z5A">
+                                <rect key="frame" x="96" y="67" width="28.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thermometer-icon" translatesAutoresizingMaskIntoConstraints="NO" id="g2W-ur-W35">
+                                <rect key="frame" x="139.5" y="65" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="A0T-H0-c6o"/>
+                                    <constraint firstAttribute="width" constant="18" id="TfL-tF-Btq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12℃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1z-uG-KC4">
+                                <rect key="frame" x="157.5" y="67" width="27" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="P0W-6K-myl">
+                                <rect key="frame" x="199.5" y="65" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="N6z-OK-kTD"/>
+                                    <constraint firstAttribute="width" constant="18" id="RoO-5m-bxp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8m/s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cgp-jp-wfQ">
+                                <rect key="frame" x="220.5" y="67" width="28.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wind-icon" translatesAutoresizingMaskIntoConstraints="NO" id="cjN-W7-Tpr">
+                                <rect key="frame" x="73" y="65" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="Smx-f9-H3e"/>
+                                    <constraint firstAttribute="height" constant="18" id="UvV-2c-lcW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g2W-ur-W35" firstAttribute="leading" secondItem="uK3-hx-z5A" secondAttribute="trailing" constant="15" id="0wm-ml-PMF"/>
+                            <constraint firstItem="Vgm-68-QWB" firstAttribute="leading" secondItem="DKO-IW-mBo" secondAttribute="trailing" constant="8" id="9NP-uQ-0Vj"/>
+                            <constraint firstItem="R1z-uG-KC4" firstAttribute="centerY" secondItem="g2W-ur-W35" secondAttribute="centerY" id="Exn-U8-8ly"/>
+                            <constraint firstItem="cjN-W7-Tpr" firstAttribute="top" secondItem="tBN-bV-YGt" secondAttribute="bottom" constant="8" id="FSF-rE-OHp"/>
+                            <constraint firstItem="DKO-IW-mBo" firstAttribute="leading" secondItem="pvz-va-6Ux" secondAttribute="leading" constant="15" id="IRF-ff-lUu"/>
+                            <constraint firstItem="Vgm-68-QWB" firstAttribute="top" secondItem="pvz-va-6Ux" secondAttribute="top" constant="16" id="Iyu-zY-OyL"/>
+                            <constraint firstItem="g2W-ur-W35" firstAttribute="centerY" secondItem="cjN-W7-Tpr" secondAttribute="centerY" id="LWT-vY-813"/>
+                            <constraint firstItem="DKO-IW-mBo" firstAttribute="top" secondItem="pvz-va-6Ux" secondAttribute="top" constant="15" id="MqD-xb-ppH"/>
+                            <constraint firstItem="P0W-6K-myl" firstAttribute="centerY" secondItem="cjN-W7-Tpr" secondAttribute="centerY" id="R0s-7L-mCB"/>
+                            <constraint firstItem="P0W-6K-myl" firstAttribute="leading" secondItem="R1z-uG-KC4" secondAttribute="trailing" constant="15" id="SLR-JG-pzY"/>
+                            <constraint firstItem="Cgp-jp-wfQ" firstAttribute="centerY" secondItem="P0W-6K-myl" secondAttribute="centerY" id="UWh-DL-WQN"/>
+                            <constraint firstItem="cjN-W7-Tpr" firstAttribute="leading" secondItem="DKO-IW-mBo" secondAttribute="trailing" constant="8" id="YMw-TK-S3q"/>
+                            <constraint firstItem="uK3-hx-z5A" firstAttribute="leading" secondItem="cjN-W7-Tpr" secondAttribute="trailing" constant="5" id="c0f-cJ-b5I"/>
+                            <constraint firstItem="Cgp-jp-wfQ" firstAttribute="leading" secondItem="P0W-6K-myl" secondAttribute="trailing" constant="3" id="cvA-8j-ZU6"/>
+                            <constraint firstItem="tBN-bV-YGt" firstAttribute="top" secondItem="Vgm-68-QWB" secondAttribute="bottom" constant="8" id="fN7-no-xgD"/>
+                            <constraint firstItem="R1z-uG-KC4" firstAttribute="leading" secondItem="g2W-ur-W35" secondAttribute="trailing" id="ncp-vc-l3K"/>
+                            <constraint firstItem="tBN-bV-YGt" firstAttribute="leading" secondItem="DKO-IW-mBo" secondAttribute="trailing" constant="8" id="p38-d4-cv3"/>
+                            <constraint firstItem="uK3-hx-z5A" firstAttribute="centerY" secondItem="cjN-W7-Tpr" secondAttribute="centerY" id="tbZ-9L-czj"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                <point key="value" x="1" y="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="color_tableView_bg"/>
+                <constraints>
+                    <constraint firstItem="pvz-va-6Ux" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="GpQ-1D-IUw"/>
+                    <constraint firstItem="pvz-va-6Ux" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="UhP-hd-HDY"/>
+                    <constraint firstItem="pvz-va-6Ux" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="VmI-uv-qDo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pvz-va-6Ux" secondAttribute="trailing" id="rhh-i5-4To"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="159.5" y="100"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="corn-icon" width="1024" height="1024"/>
+        <image name="thermometer-icon" width="25" height="25"/>
+        <image name="water" width="25" height="25"/>
+        <image name="wind-icon" width="25" height="25"/>
+        <namedColor name="color_tableView_bg">
+            <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
