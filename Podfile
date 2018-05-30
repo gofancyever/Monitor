@@ -7,13 +7,14 @@ target 'Monitor' do
 
   # Pods for Monitor
 	pod 'Charts'
-    pod 'AMap2DMap'
+    pod 'AMap3DMap'
     pod 'AMapSearch'
     pod 'AMapLocation'
     pod 'IBAnimatable'
     pod 'Reusable'
     pod "CenteredCollectionView"
     pod 'Hero'
+    pod 'SwiftyGif'
   target 'MonitorTests' do
     inherit! :search_paths
     # Pods for testing

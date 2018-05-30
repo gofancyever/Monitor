@@ -1,10 +1,10 @@
 PODS:
-  - AMap2DMap (5.6.0):
-    - AMapFoundation (~> 1.4)
-  - AMapFoundation (1.5.0)
+  - AMap3DMap (6.2.0):
+    - AMapFoundation (~> 1.5)
+  - AMapFoundation (1.5.2)
   - AMapLocation (2.6.0):
     - AMapFoundation (~> 1.4)
-  - AMapSearch (6.1.0):
+  - AMapSearch (6.1.1):
     - AMapFoundation (~> 1.4)
   - CenteredCollectionView (2.0.0)
   - Charts (3.1.1):
@@ -17,9 +17,10 @@ PODS:
     - Reusable/View (= 4.0.2)
   - Reusable/Storyboard (4.0.2)
   - Reusable/View (4.0.2)
+  - SwiftyGif (4.1.0)
 
 DEPENDENCIES:
-  - AMap2DMap
+  - AMap3DMap
   - AMapLocation
   - AMapSearch
   - CenteredCollectionView
@@ -27,10 +28,11 @@ DEPENDENCIES:
   - Hero
   - IBAnimatable
   - Reusable
+  - SwiftyGif
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - AMap2DMap
+    - AMap3DMap
     - AMapFoundation
     - AMapLocation
     - AMapSearch
@@ -39,18 +41,20 @@ SPEC REPOS:
     - Hero
     - IBAnimatable
     - Reusable
+    - SwiftyGif
 
 SPEC CHECKSUMS:
-  AMap2DMap: cf0bfd6ae97951b55cc061903b814f924ba6c221
-  AMapFoundation: 04fc43736ed63bed15d502e20f74ded399991f1e
+  AMap3DMap: 4170b8e1674883eefc068e277abf4dbaa9ea5f2d
+  AMapFoundation: 46b194013a3b06e0e82e8963108ceb972d4200b8
   AMapLocation: 55116a2c8956eab7550cbb56e989aa5cdcc424e3
-  AMapSearch: e3f96bd0681abe70abba303709a1a05625a8f76c
+  AMapSearch: 3dcbf85c403a2a0fe0eda5318caabc272b31f5e1
   CenteredCollectionView: 6548b515645aea6ea89618f4b5ca090191dc8628
   Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
   IBAnimatable: dd81f8f22e9982b05e8ac50794e4c8988cc300f2
   Reusable: 584a5629747c52e0f6a77841b400dc2643f6fa0f
+  SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
 
-PODFILE CHECKSUM: 38d565cd139f6d7e8fa5b31a74ac5e82dd68a02e
+PODFILE CHECKSUM: 3cac69ca3286640d83c8af389d15c81c36bd6b67
 
 COCOAPODS: 1.5.0

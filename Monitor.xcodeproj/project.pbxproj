@@ -30,6 +30,11 @@
 		BC751CAE20BD33110028441B /* ComprehensiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC751CAC20BD33110028441B /* ComprehensiveCell.xib */; };
 		BC751CB120BD36EF0028441B /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC751CB020BD36EF0028441B /* BaseNavigationController.swift */; };
 		BC751CB320BD57F90028441B /* StatisticsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC751CB220BD57F90028441B /* StatisticsDetailController.swift */; };
+		BC81A73120BE2F7700DB3692 /* style.data in Resources */ = {isa = PBXBuildFile; fileRef = BC81A73020BE2F7700DB3692 /* style.data */; };
+		BC81A73320BE371E00DB3692 /* WarningSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81A73220BE371E00DB3692 /* WarningSettingController.swift */; };
+		BC81A73520BE3C1900DB3692 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC81A73420BE3C1900DB3692 /* Statistics.storyboard */; };
+		BC81A73B20BE4EE900DB3692 /* GrowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81A73A20BE4EE900DB3692 /* GrowController.swift */; };
+		BC81A73D20BE502400DB3692 /* test1.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC81A73C20BE502400DB3692 /* test1.gif */; };
 		BC8E4E0A20BBD07A0075ACB5 /* HealthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E4E0920BBD07A0075ACB5 /* HealthController.swift */; };
 		BC8E4E0E20BC03E50075ACB5 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E4E0D20BC03E50075ACB5 /* MapController.swift */; };
 		BC8E4E1220BC0C3E0075ACB5 /* MonitoringStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E4E1020BC0C3E0075ACB5 /* MonitoringStationCell.swift */; };
@@ -90,6 +95,11 @@
 		BC751CAC20BD33110028441B /* ComprehensiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComprehensiveCell.xib; sourceTree = "<group>"; };
 		BC751CB020BD36EF0028441B /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		BC751CB220BD57F90028441B /* StatisticsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsDetailController.swift; sourceTree = "<group>"; };
+		BC81A73020BE2F7700DB3692 /* style.data */ = {isa = PBXFileReference; lastKnownFileType = file; path = style.data; sourceTree = "<group>"; };
+		BC81A73220BE371E00DB3692 /* WarningSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningSettingController.swift; sourceTree = "<group>"; };
+		BC81A73420BE3C1900DB3692 /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
+		BC81A73A20BE4EE900DB3692 /* GrowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowController.swift; sourceTree = "<group>"; };
+		BC81A73C20BE502400DB3692 /* test1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = test1.gif; path = Monitor/test1.gif; sourceTree = SOURCE_ROOT; };
 		BC8E4E0920BBD07A0075ACB5 /* HealthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthController.swift; sourceTree = "<group>"; };
 		BC8E4E0D20BC03E50075ACB5 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		BC8E4E0F20BC04390075ACB5 /* Monitor-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Monitor-header.h"; sourceTree = "<group>"; };
@@ -178,6 +188,9 @@
 		BC71A0BE20B8037000D30A3D /* Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				BC81A73C20BE502400DB3692 /* test1.gif */,
+				BC81A73620BE3F3400DB3692 /* 统计 */,
+				BC81A73020BE2F7700DB3692 /* style.data */,
 				BC751CAF20BD36D30028441B /* Base */,
 				BC751CA920BD315A0028441B /* IntAxisValueFormatter.swift */,
 				BC751CA720BD314F0028441B /* LargeValueFormatter.swift */,
@@ -196,15 +209,10 @@
 				BC8E4E1120BC0C3E0075ACB5 /* MonitoringStationCell.xib */,
 				BC8E4E1420BC0E290075ACB5 /* MonitoringStationController.swift */,
 				BC751C9720BCF3D40028441B /* MonitoringStationDetailController.swift */,
-				BC751C9920BCF8490028441B /* WindStatisticsCell.swift */,
-				BC751C9A20BCF8490028441B /* WindStatisticsCell.xib */,
-				BC751C9F20BD2EBF0028441B /* HealthStatisticsCell.swift */,
-				BC751CA020BD2EBF0028441B /* HealthStatisticsCell.xib */,
-				BC751CA320BD30730028441B /* HumidityCell.swift */,
-				BC751CA420BD30730028441B /* HumidityCell.xib */,
-				BC751CAB20BD33110028441B /* ComprehensiveCell.swift */,
-				BC751CAC20BD33110028441B /* ComprehensiveCell.xib */,
 				BC751CB220BD57F90028441B /* StatisticsDetailController.swift */,
+				BC81A73220BE371E00DB3692 /* WarningSettingController.swift */,
+				BC81A73420BE3C1900DB3692 /* Statistics.storyboard */,
+				BC81A73A20BE4EE900DB3692 /* GrowController.swift */,
 			);
 			path = Monitor;
 			sourceTree = "<group>";
@@ -233,6 +241,45 @@
 				BC751CB020BD36EF0028441B /* BaseNavigationController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		BC81A73620BE3F3400DB3692 /* 统计 */ = {
+			isa = PBXGroup;
+			children = (
+				BC81A73920BE3F5900DB3692 /* model */,
+				BC81A73820BE3F5300DB3692 /* controller */,
+				BC81A73720BE3F4D00DB3692 /* view */,
+			);
+			path = "统计";
+			sourceTree = "<group>";
+		};
+		BC81A73720BE3F4D00DB3692 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BC751C9920BCF8490028441B /* WindStatisticsCell.swift */,
+				BC751C9A20BCF8490028441B /* WindStatisticsCell.xib */,
+				BC751C9F20BD2EBF0028441B /* HealthStatisticsCell.swift */,
+				BC751CA020BD2EBF0028441B /* HealthStatisticsCell.xib */,
+				BC751CA320BD30730028441B /* HumidityCell.swift */,
+				BC751CA420BD30730028441B /* HumidityCell.xib */,
+				BC751CAB20BD33110028441B /* ComprehensiveCell.swift */,
+				BC751CAC20BD33110028441B /* ComprehensiveCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BC81A73820BE3F5300DB3692 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BC81A73920BE3F5900DB3692 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +394,9 @@
 				BC751CA620BD30730028441B /* HumidityCell.xib in Resources */,
 				BC751CA220BD2EBF0028441B /* HealthStatisticsCell.xib in Resources */,
 				BC751C9C20BCF8490028441B /* WindStatisticsCell.xib in Resources */,
+				BC81A73520BE3C1900DB3692 /* Statistics.storyboard in Resources */,
+				BC81A73D20BE502400DB3692 /* test1.gif in Resources */,
+				BC81A73120BE2F7700DB3692 /* style.data in Resources */,
 				BC71A0CA20B8037200D30A3D /* LaunchScreen.storyboard in Resources */,
 				BC71A0C720B8037200D30A3D /* Assets.xcassets in Resources */,
 				BC8E4E1320BC0C3E0075ACB5 /* MonitoringStationCell.xib in Resources */,
@@ -379,7 +429,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Monitor/Pods-Monitor-resources.sh",
-				"${PODS_ROOT}/AMap2DMap/MAMapKit.framework/AMap.bundle",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -402,6 +452,7 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -410,6 +461,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -480,6 +532,7 @@
 				BC71A0C220B8037000D30A3D /* ViewController.swift in Sources */,
 				BC751C9820BCF3D40028441B /* MonitoringStationDetailController.swift in Sources */,
 				BC751CA520BD30730028441B /* HumidityCell.swift in Sources */,
+				BC81A73B20BE4EE900DB3692 /* GrowController.swift in Sources */,
 				BCAFF97B20B8096B00965F50 /* WindSpeedController.swift in Sources */,
 				BC8E4E1520BC0E290075ACB5 /* MonitoringStationController.swift in Sources */,
 				BC751CAD20BD33110028441B /* ComprehensiveCell.swift in Sources */,
@@ -488,6 +541,7 @@
 				BC751CB120BD36EF0028441B /* BaseNavigationController.swift in Sources */,
 				BC751CAA20BD315A0028441B /* IntAxisValueFormatter.swift in Sources */,
 				BC8E4E1220BC0C3E0075ACB5 /* MonitoringStationCell.swift in Sources */,
+				BC81A73320BE371E00DB3692 /* WarningSettingController.swift in Sources */,
 				BC751C9E20BD29C90028441B /* DayAxisValueFormatter.swift in Sources */,
 				BC71A0C020B8037000D30A3D /* AppDelegate.swift in Sources */,
 				BC751CB320BD57F90028441B /* StatisticsDetailController.swift in Sources */,
