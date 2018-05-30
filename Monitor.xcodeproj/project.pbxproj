@@ -10,7 +10,6 @@
 		8C9CBAA43BA357E314F18A3C /* Pods_MonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA8B09FB48A16CEC75E6301 /* Pods_MonitorUITests.framework */; };
 		B0520B4045B47C874A7128FD /* Pods_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DAE136702AB37A7670D02A /* Pods_Monitor.framework */; };
 		BC71A0C020B8037000D30A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71A0BF20B8037000D30A3D /* AppDelegate.swift */; };
-		BC71A0C220B8037000D30A3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71A0C120B8037000D30A3D /* ViewController.swift */; };
 		BC71A0C520B8037000D30A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC71A0C320B8037000D30A3D /* Main.storyboard */; };
 		BC71A0C720B8037200D30A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC71A0C620B8037200D30A3D /* Assets.xcassets */; };
 		BC71A0CA20B8037200D30A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC71A0C820B8037200D30A3D /* LaunchScreen.storyboard */; };
@@ -70,7 +69,6 @@
 		ABDBCB9C62FFC021817F3684 /* Pods-MonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorTests/Pods-MonitorTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC71A0BC20B8037000D30A3D /* Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC71A0BF20B8037000D30A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC71A0C120B8037000D30A3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC71A0C420B8037000D30A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC71A0C620B8037200D30A3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC71A0C920B8037200D30A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,7 +97,7 @@
 		BC81A73220BE371E00DB3692 /* WarningSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningSettingController.swift; sourceTree = "<group>"; };
 		BC81A73420BE3C1900DB3692 /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		BC81A73A20BE4EE900DB3692 /* GrowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowController.swift; sourceTree = "<group>"; };
-		BC81A73C20BE502400DB3692 /* test1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = test1.gif; path = Monitor/test1.gif; sourceTree = SOURCE_ROOT; };
+		BC81A73C20BE502400DB3692 /* test1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = test1.gif; path = Monitor/other/test1.gif; sourceTree = SOURCE_ROOT; };
 		BC8E4E0920BBD07A0075ACB5 /* HealthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthController.swift; sourceTree = "<group>"; };
 		BC8E4E0D20BC03E50075ACB5 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		BC8E4E0F20BC04390075ACB5 /* Monitor-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Monitor-header.h"; sourceTree = "<group>"; };
@@ -188,31 +186,16 @@
 		BC71A0BE20B8037000D30A3D /* Monitor */ = {
 			isa = PBXGroup;
 			children = (
-				BC81A73C20BE502400DB3692 /* test1.gif */,
+				BC81A74520BE867100DB3692 /* vendor */,
+				BC81A74420BE866900DB3692 /* extension */,
+				BC81A74320BE863900DB3692 /* other */,
+				BC81A74120BE861500DB3692 /* 地图 */,
+				BC81A73E20BE85AF00DB3692 /* 地块 */,
 				BC81A73620BE3F3400DB3692 /* 统计 */,
-				BC81A73020BE2F7700DB3692 /* style.data */,
 				BC751CAF20BD36D30028441B /* Base */,
-				BC751CA920BD315A0028441B /* IntAxisValueFormatter.swift */,
-				BC751CA720BD314F0028441B /* LargeValueFormatter.swift */,
-				BC751C9D20BD29C90028441B /* DayAxisValueFormatter.swift */,
-				BC71A0BF20B8037000D30A3D /* AppDelegate.swift */,
-				BC71A0C120B8037000D30A3D /* ViewController.swift */,
 				BC71A0C320B8037000D30A3D /* Main.storyboard */,
-				BC71A0C620B8037200D30A3D /* Assets.xcassets */,
-				BC71A0C820B8037200D30A3D /* LaunchScreen.storyboard */,
 				BC71A0CB20B8037200D30A3D /* Info.plist */,
-				BCAFF97A20B8096B00965F50 /* WindSpeedController.swift */,
-				BC8E4E0920BBD07A0075ACB5 /* HealthController.swift */,
-				BC8E4E0D20BC03E50075ACB5 /* MapController.swift */,
 				BC8E4E0F20BC04390075ACB5 /* Monitor-header.h */,
-				BC8E4E1020BC0C3E0075ACB5 /* MonitoringStationCell.swift */,
-				BC8E4E1120BC0C3E0075ACB5 /* MonitoringStationCell.xib */,
-				BC8E4E1420BC0E290075ACB5 /* MonitoringStationController.swift */,
-				BC751C9720BCF3D40028441B /* MonitoringStationDetailController.swift */,
-				BC751CB220BD57F90028441B /* StatisticsDetailController.swift */,
-				BC81A73220BE371E00DB3692 /* WarningSettingController.swift */,
-				BC81A73420BE3C1900DB3692 /* Statistics.storyboard */,
-				BC81A73A20BE4EE900DB3692 /* GrowController.swift */,
 			);
 			path = Monitor;
 			sourceTree = "<group>";
@@ -246,6 +229,7 @@
 		BC81A73620BE3F3400DB3692 /* 统计 */ = {
 			isa = PBXGroup;
 			children = (
+				BC81A73420BE3C1900DB3692 /* Statistics.storyboard */,
 				BC81A73920BE3F5900DB3692 /* model */,
 				BC81A73820BE3F5300DB3692 /* controller */,
 				BC81A73720BE3F4D00DB3692 /* view */,
@@ -271,6 +255,8 @@
 		BC81A73820BE3F5300DB3692 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				BCAFF97A20B8096B00965F50 /* WindSpeedController.swift */,
+				BC8E4E0920BBD07A0075ACB5 /* HealthController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -280,6 +266,81 @@
 			children = (
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		BC81A73E20BE85AF00DB3692 /* 地块 */ = {
+			isa = PBXGroup;
+			children = (
+				BC81A74020BE85FB00DB3692 /* view */,
+				BC81A73F20BE85C000DB3692 /* controller */,
+			);
+			path = "地块";
+			sourceTree = "<group>";
+		};
+		BC81A73F20BE85C000DB3692 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC81A73220BE371E00DB3692 /* WarningSettingController.swift */,
+				BC81A73A20BE4EE900DB3692 /* GrowController.swift */,
+				BC8E4E1420BC0E290075ACB5 /* MonitoringStationController.swift */,
+				BC751C9720BCF3D40028441B /* MonitoringStationDetailController.swift */,
+				BC751CB220BD57F90028441B /* StatisticsDetailController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BC81A74020BE85FB00DB3692 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E4E1020BC0C3E0075ACB5 /* MonitoringStationCell.swift */,
+				BC8E4E1120BC0C3E0075ACB5 /* MonitoringStationCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BC81A74120BE861500DB3692 /* 地图 */ = {
+			isa = PBXGroup;
+			children = (
+				BC81A74220BE862400DB3692 /* controller */,
+			);
+			path = "地图";
+			sourceTree = "<group>";
+		};
+		BC81A74220BE862400DB3692 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E4E0D20BC03E50075ACB5 /* MapController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BC81A74320BE863900DB3692 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				BC71A0C820B8037200D30A3D /* LaunchScreen.storyboard */,
+				BC71A0BF20B8037000D30A3D /* AppDelegate.swift */,
+				BC71A0C620B8037200D30A3D /* Assets.xcassets */,
+				BC81A73020BE2F7700DB3692 /* style.data */,
+				BC81A73C20BE502400DB3692 /* test1.gif */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		BC81A74420BE866900DB3692 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		BC81A74520BE867100DB3692 /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				BC751CA920BD315A0028441B /* IntAxisValueFormatter.swift */,
+				BC751CA720BD314F0028441B /* LargeValueFormatter.swift */,
+				BC751C9D20BD29C90028441B /* DayAxisValueFormatter.swift */,
+			);
+			path = vendor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -529,7 +590,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC71A0C220B8037000D30A3D /* ViewController.swift in Sources */,
 				BC751C9820BCF3D40028441B /* MonitoringStationDetailController.swift in Sources */,
 				BC751CA520BD30730028441B /* HumidityCell.swift in Sources */,
 				BC81A73B20BE4EE900DB3692 /* GrowController.swift in Sources */,
