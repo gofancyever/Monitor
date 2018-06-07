@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8C9CBAA43BA357E314F18A3C /* Pods_MonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA8B09FB48A16CEC75E6301 /* Pods_MonitorUITests.framework */; };
 		B0520B4045B47C874A7128FD /* Pods_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DAE136702AB37A7670D02A /* Pods_Monitor.framework */; };
+		BC3FF47820C90F9F008F4F8E /* TemperatureStatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */; };
+		BC3FF47920C90F9F008F4F8E /* TemperatureStatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */; };
 		BC71A0C020B8037000D30A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71A0BF20B8037000D30A3D /* AppDelegate.swift */; };
 		BC71A0C520B8037000D30A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC71A0C320B8037000D30A3D /* Main.storyboard */; };
 		BC71A0C720B8037200D30A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC71A0C620B8037200D30A3D /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		82DAE136702AB37A7670D02A /* Pods_Monitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECCB9347455BA0DABF06584 /* Pods-MonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorUITests/Pods-MonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABDBCB9C62FFC021817F3684 /* Pods-MonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorTests/Pods-MonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureStatisticsCell.swift; sourceTree = "<group>"; };
+		BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureStatisticsCell.xib; sourceTree = "<group>"; };
 		BC71A0BC20B8037000D30A3D /* Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC71A0BF20B8037000D30A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC71A0C420B8037000D30A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 				BC751CA420BD30730028441B /* HumidityCell.xib */,
 				BC751CAB20BD33110028441B /* ComprehensiveCell.swift */,
 				BC751CAC20BD33110028441B /* ComprehensiveCell.xib */,
+				BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */,
+				BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 				BC81A73D20BE502400DB3692 /* test1.gif in Resources */,
 				BC81A73120BE2F7700DB3692 /* style.data in Resources */,
 				BC71A0CA20B8037200D30A3D /* LaunchScreen.storyboard in Resources */,
+				BC3FF47920C90F9F008F4F8E /* TemperatureStatisticsCell.xib in Resources */,
 				BC71A0C720B8037200D30A3D /* Assets.xcassets in Resources */,
 				BC8E4E1320BC0C3E0075ACB5 /* MonitoringStationCell.xib in Resources */,
 				BC751CAE20BD33110028441B /* ComprehensiveCell.xib in Resources */,
@@ -595,6 +602,7 @@
 				BC81A73B20BE4EE900DB3692 /* GrowController.swift in Sources */,
 				BCAFF97B20B8096B00965F50 /* WindSpeedController.swift in Sources */,
 				BC8E4E1520BC0E290075ACB5 /* MonitoringStationController.swift in Sources */,
+				BC3FF47820C90F9F008F4F8E /* TemperatureStatisticsCell.swift in Sources */,
 				BC751CAD20BD33110028441B /* ComprehensiveCell.swift in Sources */,
 				BC751C9B20BCF8490028441B /* WindStatisticsCell.swift in Sources */,
 				BC751CA820BD314F0028441B /* LargeValueFormatter.swift in Sources */,
