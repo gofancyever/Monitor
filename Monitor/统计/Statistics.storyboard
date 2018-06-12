@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,14 +14,29 @@
         <!--综合-->
         <scene sceneID="qVH-Uj-FF7">
             <objects>
-                <viewController title="综合" id="Niz-qM-qIk" sceneMemberID="viewController">
+                <viewController title="综合" id="Niz-qM-qIk" customClass="WindSpeedController" customModule="Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hPM-iX-aI3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CF5-sA-UQi" customClass="AnimatableView" customModule="IBAnimatable">
                                 <rect key="frame" x="15" y="20" width="345" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KB7-b2-GFp" customClass="BaseLineChartView" customModule="Monitor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="8" width="345" height="550"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="chart_wind"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="KB7-b2-GFp" secondAttribute="trailing" id="IRz-eM-uvj"/>
+                                    <constraint firstAttribute="bottom" secondItem="KB7-b2-GFp" secondAttribute="bottom" constant="10" id="Qhn-t5-kmQ"/>
+                                    <constraint firstItem="KB7-b2-GFp" firstAttribute="top" secondItem="CF5-sA-UQi" secondAttribute="top" constant="8" id="iLG-71-0WC"/>
+                                    <constraint firstItem="KB7-b2-GFp" firstAttribute="leading" secondItem="CF5-sA-UQi" secondAttribute="leading" id="vnW-Mw-8NM"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
@@ -58,6 +73,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="chartView" destination="KB7-b2-GFp" id="FTa-nZ-Mht"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bc6-5M-DbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,14 +103,29 @@
         <!--综合-->
         <scene sceneID="tdG-5h-7Ov">
             <objects>
-                <viewController title="综合" id="ftl-h5-z61" sceneMemberID="viewController">
+                <viewController title="综合" id="ftl-h5-z61" customClass="HealthController" customModule="Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eh6-4d-tl8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ot-Ss-8ur" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="15" y="20" width="345" height="568"/>
+                                <rect key="frame" x="15" y="62" width="345" height="526"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M21-bq-L28" customClass="BaseRadarChartView" customModule="Monitor" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="8" width="345" height="510"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="chart_health"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="M21-bq-L28" firstAttribute="leading" secondItem="5ot-Ss-8ur" secondAttribute="leading" id="Iih-GR-k00"/>
+                                    <constraint firstItem="M21-bq-L28" firstAttribute="top" secondItem="5ot-Ss-8ur" secondAttribute="top" constant="8" id="TIZ-Wk-9JN"/>
+                                    <constraint firstAttribute="trailing" secondItem="M21-bq-L28" secondAttribute="trailing" id="W9y-VW-u4e"/>
+                                    <constraint firstAttribute="bottom" secondItem="M21-bq-L28" secondAttribute="bottom" constant="8" id="sXf-WB-fR5"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
@@ -101,17 +134,40 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="fade"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylG-Xm-9zk">
+                                <rect key="frame" x="15" y="20" width="345" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="*">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="肥力反应当前地块营养状况,过高或过低都将对作物产生不良影响">
+                                        <attributes>
+                                            <color key="NSColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name=".PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="color_tableView_bg"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ylG-Xm-9zk" secondAttribute="trailing" constant="15" id="43V-Jx-SBW"/>
+                            <constraint firstItem="ylG-Xm-9zk" firstAttribute="top" secondItem="thR-C9-bjU" secondAttribute="top" constant="20" id="CoJ-6e-Sqh"/>
                             <constraint firstItem="5ot-Ss-8ur" firstAttribute="leading" secondItem="thR-C9-bjU" secondAttribute="leading" constant="15" id="F1m-Ol-5mn"/>
+                            <constraint firstItem="5ot-Ss-8ur" firstAttribute="top" secondItem="ylG-Xm-9zk" secondAttribute="bottom" constant="15" id="HLN-5D-R4c"/>
+                            <constraint firstItem="ylG-Xm-9zk" firstAttribute="leading" secondItem="thR-C9-bjU" secondAttribute="leading" constant="15" id="OfZ-9Z-YlE"/>
                             <constraint firstItem="thR-C9-bjU" firstAttribute="trailing" secondItem="5ot-Ss-8ur" secondAttribute="trailing" constant="15" id="XaQ-76-Nsp"/>
                             <constraint firstItem="thR-C9-bjU" firstAttribute="bottom" secondItem="5ot-Ss-8ur" secondAttribute="bottom" constant="15" id="asi-8r-sRp"/>
-                            <constraint firstItem="5ot-Ss-8ur" firstAttribute="top" secondItem="thR-C9-bjU" secondAttribute="top" constant="20" id="pVf-OF-B2Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="thR-C9-bjU"/>
                     </view>
-                    <navigationItem key="navigationItem" title="综合" id="dIf-um-tii">
+                    <navigationItem key="navigationItem" title="肥力" id="dIf-um-tii">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="uiL-kL-jZb">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cVa-i7-Aoy">
                                 <rect key="frame" x="16" y="11" width="43" height="22"/>
@@ -129,10 +185,13 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="chartView" destination="M21-bq-L28" id="1zL-Rq-PYf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z8z-hz-lVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6383" y="2051"/>
+            <point key="canvasLocation" x="-6383.1999999999998" y="2050.5247376311845"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="BL6-sE-HdX">
@@ -298,15 +357,6 @@
     </scenes>
     <resources>
         <image name="icon_back" width="10" height="18"/>
-        <namedColor name="color_tableView_bg">
-            <color red="0.96499997380000002" green="0.96499997380000002" blue="0.96499997380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="color_tableView_bg">
-            <color red="0.96499997380000002" green="0.96499997380000002" blue="0.96499997380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="color_tableView_bg">
-            <color red="0.96499997380000002" green="0.96499997380000002" blue="0.96499997380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="color_tableView_bg">
             <color red="0.96499997380000002" green="0.96499997380000002" blue="0.96499997380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

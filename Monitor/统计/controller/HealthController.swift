@@ -11,50 +11,13 @@ import Charts
 
 class HealthController: UIViewController {
 
-    @IBOutlet weak var chartView: RadarChartView!
-    
-    let activities = ["湿度", "温度", "营养"]
-    
-    
+    @IBOutlet weak var chartView: BaseRadarChartView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        chartView.chartDescription?.enabled = false
-        chartView.webLineWidth = 1
-        chartView.innerWebLineWidth = 1
-        chartView.webColor = .lightGray
-        chartView.innerWebColor = .lightGray
-        chartView.webAlpha = 1
-        
-        let xAxis = chartView.xAxis
-        xAxis.labelFont = .systemFont(ofSize: 9, weight: .light)
-        xAxis.xOffset = 0
-        xAxis.yOffset = 0
-        xAxis.valueFormatter = self
-        xAxis.labelTextColor = .black
-        
-        let yAxis = chartView.yAxis
-        yAxis.labelFont = .systemFont(ofSize: 9, weight: .light)
-        yAxis.labelCount = 5
-        yAxis.axisMinimum = 0
-        yAxis.axisMaximum = 80
-        yAxis.drawLabelsEnabled = false
-        
-        let l = chartView.legend
-        l.horizontalAlignment = .center
-        l.verticalAlignment = .top
-        l.orientation = .horizontal
-        l.drawInside = false
-        l.font = .systemFont(ofSize: 10, weight: .light)
-        l.xEntrySpace = 7
-        l.yEntrySpace = 5
-        l.textColor = .black
-        
+    
         self.setChartData()
         chartView.animate(xAxisDuration: 1.4, yAxisDuration: 1.4, easingOption: .easeOutBack)
-        
-        
     }
 
 
@@ -96,9 +59,4 @@ class HealthController: UIViewController {
     
 
 
-}
-extension HealthController: IAxisValueFormatter {
-    func stringForValue(_ value: Double, axis: AxisBase?) -> String {
-        return activities[Int(value) % activities.count]
-    }
 }

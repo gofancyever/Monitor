@@ -17,6 +17,7 @@ PODS:
     - Reusable/View (= 4.0.2)
   - Reusable/Storyboard (4.0.2)
   - Reusable/View (4.0.2)
+  - SnapKit (4.0.0)
   - SwiftyGif (4.1.0)
 
 DEPENDENCIES:
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - Hero
   - IBAnimatable
   - Reusable
+  - SnapKit
   - SwiftyGif
 
 SPEC REPOS:
@@ -41,6 +43,7 @@ SPEC REPOS:
     - Hero
     - IBAnimatable
     - Reusable
+    - SnapKit
     - SwiftyGif
 
 SPEC CHECKSUMS:
@@ -53,8 +56,9 @@ SPEC CHECKSUMS:
   Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
   IBAnimatable: dd81f8f22e9982b05e8ac50794e4c8988cc300f2
   Reusable: 584a5629747c52e0f6a77841b400dc2643f6fa0f
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
 
-PODFILE CHECKSUM: 3cac69ca3286640d83c8af389d15c81c36bd6b67
+PODFILE CHECKSUM: 6e28d3a5fa579343b2c0815dda3d17a9ac45a34a
 
 COCOAPODS: 1.5.0

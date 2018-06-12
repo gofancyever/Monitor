@@ -10,42 +10,12 @@ import UIKit
 import Charts
 import Reusable
 class HealthStatisticsCell: UICollectionViewCell,NibReusable {
-    @IBOutlet weak var chartView: RadarChartView!
+    @IBOutlet weak var chartView: BaseRadarChartView!
     
     let activities = ["氮", "钾", "氨"]
     override func awakeFromNib() {
         super.awakeFromNib()
-        chartView.chartDescription?.enabled = false
-        chartView.webLineWidth = 1
-        chartView.innerWebLineWidth = 1
-        chartView.webColor = .lightGray
-        chartView.innerWebColor = .lightGray
-        chartView.webAlpha = 1
-        
-        let xAxis = chartView.xAxis
-        xAxis.labelFont = .systemFont(ofSize: 9, weight: .light)
-        xAxis.xOffset = 0
-        xAxis.yOffset = 0
-        xAxis.valueFormatter = self
-        xAxis.labelTextColor = .black
-        
-        let yAxis = chartView.yAxis
-        yAxis.labelFont = .systemFont(ofSize: 9, weight: .light)
-        yAxis.labelCount = 5
-        yAxis.axisMinimum = 0
-        yAxis.axisMaximum = 80
-        yAxis.drawLabelsEnabled = false
-        
-        let l = chartView.legend
-        l.horizontalAlignment = .center
-        l.verticalAlignment = .top
-        l.orientation = .horizontal
-        l.drawInside = false
-        l.font = .systemFont(ofSize: 10, weight: .light)
-        l.xEntrySpace = 7
-        l.yEntrySpace = 5
-        l.textColor = .black
-        
+    
         self.setChartData()
         chartView.animate(xAxisDuration: 1.4, yAxisDuration: 1.4, easingOption: .easeOutBack)
     }

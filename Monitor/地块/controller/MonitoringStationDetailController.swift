@@ -66,8 +66,8 @@ extension MonitoringStationDetailController:UICollectionViewDelegate,UICollectio
         }
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
-        let nav = UIStoryboard(name: "Statistics", bundle: nil).instantiateViewController(withIdentifier: "chart_comprehensive")
+        
+        let nav = UIStoryboard(name: "Statistics", bundle: nil).instantiateViewController(withIdentifier: "chart_health")
         self.present(nav, animated: true, completion: nil)
     }
 }

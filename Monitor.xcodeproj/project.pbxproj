@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C9CBAA43BA357E314F18A3C /* Pods_MonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA8B09FB48A16CEC75E6301 /* Pods_MonitorUITests.framework */; };
 		B0520B4045B47C874A7128FD /* Pods_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DAE136702AB37A7670D02A /* Pods_Monitor.framework */; };
+		BC1C435020CF9ED500C7D052 /* BaseLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C434F20CF9ED500C7D052 /* BaseLineChartView.swift */; };
 		BC3FF47820C90F9F008F4F8E /* TemperatureStatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */; };
 		BC3FF47920C90F9F008F4F8E /* TemperatureStatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */; };
 		BC71A0C020B8037000D30A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71A0BF20B8037000D30A3D /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 		BC8E4E1220BC0C3E0075ACB5 /* MonitoringStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E4E1020BC0C3E0075ACB5 /* MonitoringStationCell.swift */; };
 		BC8E4E1320BC0C3E0075ACB5 /* MonitoringStationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC8E4E1120BC0C3E0075ACB5 /* MonitoringStationCell.xib */; };
 		BC8E4E1520BC0E290075ACB5 /* MonitoringStationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8E4E1420BC0E290075ACB5 /* MonitoringStationController.swift */; };
+		BC95F3A920CFBF5900268DD5 /* BaseRadarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC95F3A820CFBF5900268DD5 /* BaseRadarChartView.swift */; };
 		BCAFF97B20B8096B00965F50 /* WindSpeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAFF97A20B8096B00965F50 /* WindSpeedController.swift */; };
 		F35DFA0113A6AD91A9A7F916 /* Pods_MonitorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE3717DC08C08766A5295D2 /* Pods_MonitorTests.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +71,7 @@
 		82DAE136702AB37A7670D02A /* Pods_Monitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECCB9347455BA0DABF06584 /* Pods-MonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorUITests/Pods-MonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABDBCB9C62FFC021817F3684 /* Pods-MonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorTests/Pods-MonitorTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC1C434F20CF9ED500C7D052 /* BaseLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLineChartView.swift; sourceTree = "<group>"; };
 		BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureStatisticsCell.swift; sourceTree = "<group>"; };
 		BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureStatisticsCell.xib; sourceTree = "<group>"; };
 		BC71A0BC20B8037000D30A3D /* Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +100,7 @@
 		BC751CAC20BD33110028441B /* ComprehensiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComprehensiveCell.xib; sourceTree = "<group>"; };
 		BC751CB020BD36EF0028441B /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		BC751CB220BD57F90028441B /* StatisticsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsDetailController.swift; sourceTree = "<group>"; };
+		BC7558BC20CF94CA00E4A030 /* Chart.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Chart.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BC81A73020BE2F7700DB3692 /* style.data */ = {isa = PBXFileReference; lastKnownFileType = file; path = style.data; sourceTree = "<group>"; };
 		BC81A73220BE371E00DB3692 /* WarningSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningSettingController.swift; sourceTree = "<group>"; };
 		BC81A73420BE3C1900DB3692 /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		BC8E4E1020BC0C3E0075ACB5 /* MonitoringStationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringStationCell.swift; sourceTree = "<group>"; };
 		BC8E4E1120BC0C3E0075ACB5 /* MonitoringStationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonitoringStationCell.xib; sourceTree = "<group>"; };
 		BC8E4E1420BC0E290075ACB5 /* MonitoringStationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringStationController.swift; sourceTree = "<group>"; };
+		BC95F3A820CFBF5900268DD5 /* BaseRadarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRadarChartView.swift; sourceTree = "<group>"; };
 		BCAFF97A20B8096B00965F50 /* WindSpeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindSpeedController.swift; sourceTree = "<group>"; };
 		E58ED4F415CB81BC0345D1C2 /* Pods-MonitorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorUITests/Pods-MonitorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E8EE67743A15DEFBFE27ECE0 /* Pods-Monitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monitor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Monitor/Pods-Monitor.release.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +173,7 @@
 		BC71A0B320B8036F00D30A3D = {
 			isa = PBXGroup;
 			children = (
+				BC7558BC20CF94CA00E4A030 /* Chart.playground */,
 				BC71A0BE20B8037000D30A3D /* Monitor */,
 				BC71A0D320B8037200D30A3D /* MonitorTests */,
 				BC71A0DE20B8037200D30A3D /* MonitorUITests */,
@@ -225,7 +231,9 @@
 		BC751CAF20BD36D30028441B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				BC1C434F20CF9ED500C7D052 /* BaseLineChartView.swift */,
 				BC751CB020BD36EF0028441B /* BaseNavigationController.swift */,
+				BC95F3A820CFBF5900268DD5 /* BaseRadarChartView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -520,6 +528,7 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -529,6 +538,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC751C9820BCF3D40028441B /* MonitoringStationDetailController.swift in Sources */,
+				BC1C435020CF9ED500C7D052 /* BaseLineChartView.swift in Sources */,
 				BC751CA520BD30730028441B /* HumidityCell.swift in Sources */,
 				BC81A73B20BE4EE900DB3692 /* GrowController.swift in Sources */,
 				BCAFF97B20B8096B00965F50 /* WindSpeedController.swift in Sources */,
@@ -605,6 +616,7 @@
 				BC3FF47820C90F9F008F4F8E /* TemperatureStatisticsCell.swift in Sources */,
 				BC751CAD20BD33110028441B /* ComprehensiveCell.swift in Sources */,
 				BC751C9B20BCF8490028441B /* WindStatisticsCell.swift in Sources */,
+				BC95F3A920CFBF5900268DD5 /* BaseRadarChartView.swift in Sources */,
 				BC751CA820BD314F0028441B /* LargeValueFormatter.swift in Sources */,
 				BC751CB120BD36EF0028441B /* BaseNavigationController.swift in Sources */,
 				BC751CAA20BD315A0028441B /* IntAxisValueFormatter.swift in Sources */,

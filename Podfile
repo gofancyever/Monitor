@@ -15,6 +15,7 @@ target 'Monitor' do
     pod "CenteredCollectionView"
     pod 'Hero'
     pod 'SwiftyGif'
+    pod 'SnapKit'
   target 'MonitorTests' do
     inherit! :search_paths
     # Pods for testing

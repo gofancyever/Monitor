@@ -16,40 +16,14 @@ private class CubicLineSampleFillFormatter: IFillFormatter {
     }
 }
 class WindStatisticsCell: UICollectionViewCell, NibReusable {
-    @IBOutlet weak var chartView: LineChartView!
+    @IBOutlet weak var chartView: BaseLineChartView!
     override func awakeFromNib() {
         super.awakeFromNib()
         chartView.delegate = self
-        chartView.setViewPortOffsets(left: 0, top: 20, right: 0, bottom: 0)
-        chartView.backgroundColor = UIColor.white
-        chartView.dragEnabled = true
-        chartView.setScaleEnabled(true)
-        chartView.pinchZoomEnabled = false
         chartView.maxHighlightDistance = 300
-        let yAxis = chartView.leftAxis
-        yAxis.labelFont = UIFont(name: "HelveticaNeue-Light", size:12)!
-        yAxis.setLabelCount(6, force: false)
-        yAxis.labelTextColor = .black
-        yAxis.labelPosition = .outsideChart
-        yAxis.axisLineColor = .white
-        yAxis.axisMaximum = 200
-        chartView.rightAxis.enabled = false
-        chartView.legend.enabled = false
-        
-        let xAxis = chartView.xAxis
-        xAxis.labelPosition = .bottom
-        xAxis.labelFont = .systemFont(ofSize: 10)
-        xAxis.granularity = 1
-        xAxis.labelCount = 7
-        xAxis.valueFormatter = DayAxisValueFormatter(chart: chartView)
-        
-        let ll1 = ChartLimitLine(limit: 150, label: "警戒风速")
-        ll1.lineWidth = 2
-        ll1.lineDashLengths = [5, 5]
-        ll1.labelPosition = .rightTop
-        ll1.valueFont = .systemFont(ofSize: 10)
-        chartView.leftAxis.addLimitLine(ll1)
-        
+        chartView.showWarningLine = true
+        chartView.warningLineLabel = "警戒风速"
+        chartView.warningLineLimit = 50
         
         
         self.setDataCount(Int(20 + 1), range: UInt32(100))
@@ -65,15 +39,14 @@ class WindStatisticsCell: UICollectionViewCell, NibReusable {
         let yVals2 = (0..<count).map { (i) -> ChartDataEntry in
             let mult = range + 1
             let val = Double(arc4random_uniform(mult) + 20)
-            return ChartDataEntry(x: Double(i), y: val)
+            return ChartDataEntry(x: Double(count+i), y: val)
         }
         
         let set1 = LineChartDataSet(values: yVals1, label: "实际风速")
-        
+
         set1.colors = [UIColor(red:0.46, green:0.95, blue:0.69, alpha:1.00)]
         set1.mode = .cubicBezier
         set1.drawFilledEnabled = true
-        set1.valueTextColor = #colorLiteral(red: 0.06274510175, green: 0, blue: 0.1921568662, alpha: 1)
         set1.mode = .cubicBezier
         //填充颜色
         set1.fillColor = UIColor(red:0.46, green:0.95, blue:0.69, alpha:1.00)
@@ -83,17 +56,18 @@ class WindStatisticsCell: UICollectionViewCell, NibReusable {
         set1.circleRadius = 4
         set1.setCircleColor(.white)
         set1.highlightColor = UIColor(red: 244/255, green: 117/255, blue: 117/255, alpha: 1)
-        set1.fillAlpha = 1
         set1.drawHorizontalHighlightIndicatorEnabled = false
         set1.fillFormatter = CubicLineSampleFillFormatter()
         
-        
         // 预测数据属性
-        let set2 = LineChartDataSet(values: yVals2, label: "预测风速")
+        let set2 = LineChartDataSet(values: yVals2, label: "未来风速")
         
         set2.colors = [#colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)]
         set2.mode = .cubicBezier
-        set2.drawCirclesEnabled = false
+        set2.drawFilledEnabled = true
+        set2.fillColor = #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)
+        set2.fillAlpha = 1
+        set2.drawCirclesEnabled = true
         set2.lineWidth = 1.8
         set2.circleRadius = 4
         set2.setCircleColor(.white)

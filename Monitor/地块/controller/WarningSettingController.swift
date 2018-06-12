@@ -14,7 +14,7 @@ class WarningSettingController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     @IBAction func autoSwitch(_ sender: UISwitch) {
         self.tableView.reloadData()
     }
