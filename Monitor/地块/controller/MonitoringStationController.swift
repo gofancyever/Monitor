@@ -8,37 +8,49 @@
 
 import UIKit
 import Reusable
-class MonitoringStationController: UITableViewController {
+import CollectionKit
+class MonitoringStationController: CollectionViewController {
 
+    var dataSource = ["1","2","3"]
+    let presenter = WobblePresenter()
+    let dataProvider = ArrayDataProvider<Int>(data: Array(0..<15)) { (_, data) in
+        return "\(data)"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "地块"
-        self.tableView.backgroundColor = UIColor(named: "color_tableView_bg")
-        self.tableView.register(cellType: MonitoringStationCell.self)
-        self.tableView.rowHeight = 126
-        tableView.separatorStyle = .none
+        collectionView.backgroundColor = UIColor(named: "color_tableView_bg")
+//        collectionView.contentInset = UIEdgeInsetsMake(30, 10, 54, 10)
+        
+        let provider = CollectionProvider(
+                dataProvider: dataProvider,
+                viewGenerator: { (data, index) -> MonitoringStationCell in
+                    let cell = MonitoringStationCell.loadFromNib()
+                    cell.frame.size = CGSize(width: self.collectionView.frame.width, height: 126)
+                    return MonitoringStationCell.loadFromNib()
+            },
+                viewUpdater: { (view: MonitoringStationCell, data: Int, at: Int) in
+//                    view.configure(with: data)
+            }
+        )
+
+        provider.layout = FlowLayout(lineSpacing: 0)
+        print(self.view.frame.width)
+        provider.sizeProvider = { (_, view, size) -> CGSize in
+            return CGSize(width: size.width, height: 126)
+        }
+        provider.presenter = presenter
+        provider.tapHandler = { cell,idx,data in
+            let detailVC = MonitoringStationDetailController.instantiate()
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+        self.provider = provider
+
       
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 10
-    }
 
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: MonitoringStationCell.self)
-        return cell
-    }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailVC = MonitoringStationDetailController.instantiate()
-        self.navigationController?.pushViewController(detailVC, animated: true)
-    }
 
 
 

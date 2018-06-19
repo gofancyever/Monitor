@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,14 +16,14 @@
             <objects>
                 <viewController title="综合" id="Niz-qM-qIk" customClass="WindSpeedController" customModule="Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hPM-iX-aI3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CF5-sA-UQi" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="15" y="20" width="345" height="568"/>
+                                <rect key="frame" x="15" y="20" width="345" height="655"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KB7-b2-GFp" customClass="BaseLineChartView" customModule="Monitor" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="8" width="345" height="550"/>
+                                        <rect key="frame" x="0.0" y="8" width="345" height="637"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="chart_wind"/>
@@ -48,12 +48,12 @@
                         </subviews>
                         <color key="backgroundColor" name="color_tableView_bg"/>
                         <constraints>
-                            <constraint firstItem="d23-IA-9w0" firstAttribute="trailing" secondItem="CF5-sA-UQi" secondAttribute="trailing" constant="15" id="UKY-e9-p29"/>
-                            <constraint firstItem="CF5-sA-UQi" firstAttribute="top" secondItem="d23-IA-9w0" secondAttribute="top" constant="20" id="cUG-BL-JNI"/>
-                            <constraint firstItem="CF5-sA-UQi" firstAttribute="leading" secondItem="d23-IA-9w0" secondAttribute="leading" constant="15" id="hWv-Ll-7gH"/>
-                            <constraint firstItem="d23-IA-9w0" firstAttribute="bottom" secondItem="CF5-sA-UQi" secondAttribute="bottom" constant="15" id="zuz-0w-xtI"/>
+                            <constraint firstItem="LUP-DF-Tlu" firstAttribute="trailing" secondItem="CF5-sA-UQi" secondAttribute="trailing" constant="15" id="UKY-e9-p29"/>
+                            <constraint firstItem="CF5-sA-UQi" firstAttribute="top" secondItem="LUP-DF-Tlu" secondAttribute="top" constant="20" id="cUG-BL-JNI"/>
+                            <constraint firstItem="CF5-sA-UQi" firstAttribute="leading" secondItem="LUP-DF-Tlu" secondAttribute="leading" constant="15" id="hWv-Ll-7gH"/>
+                            <constraint firstItem="LUP-DF-Tlu" firstAttribute="bottom" secondItem="CF5-sA-UQi" secondAttribute="bottom" priority="999" constant="15" id="zuz-0w-xtI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="d23-IA-9w0"/>
+                        <viewLayoutGuide key="safeArea" id="LUP-DF-Tlu"/>
                     </view>
                     <navigationItem key="navigationItem" title="综合" id="XQB-Gm-zqo">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="sTZ-dQ-7y9">
@@ -86,7 +86,7 @@
             <objects>
                 <navigationController storyboardIdentifier="chart_wind" id="7sd-Hn-9PY" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="UdD-Uu-Kh0">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <userDefinedRuntimeAttributes>
@@ -105,14 +105,14 @@
             <objects>
                 <viewController title="综合" id="ftl-h5-z61" customClass="HealthController" customModule="Monitor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eh6-4d-tl8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ot-Ss-8ur" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="15" y="62" width="345" height="526"/>
+                                <rect key="frame" x="15" y="62" width="345" height="613"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M21-bq-L28" customClass="BaseRadarChartView" customModule="Monitor" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="8" width="345" height="510"/>
+                                        <rect key="frame" x="0.0" y="8" width="345" height="597"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="chart_health"/>
@@ -157,15 +157,15 @@
                         </subviews>
                         <color key="backgroundColor" name="color_tableView_bg"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ylG-Xm-9zk" secondAttribute="trailing" constant="15" id="43V-Jx-SBW"/>
-                            <constraint firstItem="ylG-Xm-9zk" firstAttribute="top" secondItem="thR-C9-bjU" secondAttribute="top" constant="20" id="CoJ-6e-Sqh"/>
-                            <constraint firstItem="5ot-Ss-8ur" firstAttribute="leading" secondItem="thR-C9-bjU" secondAttribute="leading" constant="15" id="F1m-Ol-5mn"/>
+                            <constraint firstItem="zSr-m5-7j8" firstAttribute="trailing" secondItem="ylG-Xm-9zk" secondAttribute="trailing" constant="15" id="43V-Jx-SBW"/>
+                            <constraint firstItem="ylG-Xm-9zk" firstAttribute="top" secondItem="zSr-m5-7j8" secondAttribute="top" constant="20" id="CoJ-6e-Sqh"/>
+                            <constraint firstItem="5ot-Ss-8ur" firstAttribute="leading" secondItem="zSr-m5-7j8" secondAttribute="leading" constant="15" id="F1m-Ol-5mn"/>
                             <constraint firstItem="5ot-Ss-8ur" firstAttribute="top" secondItem="ylG-Xm-9zk" secondAttribute="bottom" constant="15" id="HLN-5D-R4c"/>
-                            <constraint firstItem="ylG-Xm-9zk" firstAttribute="leading" secondItem="thR-C9-bjU" secondAttribute="leading" constant="15" id="OfZ-9Z-YlE"/>
-                            <constraint firstItem="thR-C9-bjU" firstAttribute="trailing" secondItem="5ot-Ss-8ur" secondAttribute="trailing" constant="15" id="XaQ-76-Nsp"/>
-                            <constraint firstItem="thR-C9-bjU" firstAttribute="bottom" secondItem="5ot-Ss-8ur" secondAttribute="bottom" constant="15" id="asi-8r-sRp"/>
+                            <constraint firstItem="ylG-Xm-9zk" firstAttribute="leading" secondItem="zSr-m5-7j8" secondAttribute="leading" constant="15" id="OfZ-9Z-YlE"/>
+                            <constraint firstItem="zSr-m5-7j8" firstAttribute="trailing" secondItem="5ot-Ss-8ur" secondAttribute="trailing" constant="15" id="XaQ-76-Nsp"/>
+                            <constraint firstItem="zSr-m5-7j8" firstAttribute="bottom" secondItem="5ot-Ss-8ur" secondAttribute="bottom" constant="15" id="asi-8r-sRp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="thR-C9-bjU"/>
+                        <viewLayoutGuide key="safeArea" id="zSr-m5-7j8"/>
                     </view>
                     <navigationItem key="navigationItem" title="肥力" id="dIf-um-tii">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="uiL-kL-jZb">
@@ -198,7 +198,7 @@
             <objects>
                 <navigationController storyboardIdentifier="chart_health" id="Lek-Vk-TiV" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="1Ei-6A-K1g">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <userDefinedRuntimeAttributes>
@@ -217,11 +217,11 @@
             <objects>
                 <viewController title="综合" id="agD-Zl-3Og" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e5R-7T-GMp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hz1-p7-S6a" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="15" y="20" width="345" height="568"/>
+                                <rect key="frame" x="15" y="20" width="345" height="655"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -234,12 +234,12 @@
                         </subviews>
                         <color key="backgroundColor" name="color_tableView_bg"/>
                         <constraints>
-                            <constraint firstItem="hz1-p7-S6a" firstAttribute="top" secondItem="xds-IP-GUh" secondAttribute="top" constant="20" id="EbB-LW-AzW"/>
-                            <constraint firstItem="hz1-p7-S6a" firstAttribute="leading" secondItem="xds-IP-GUh" secondAttribute="leading" constant="15" id="YMk-fX-7OS"/>
-                            <constraint firstItem="xds-IP-GUh" firstAttribute="bottom" secondItem="hz1-p7-S6a" secondAttribute="bottom" constant="15" id="osP-TS-Ze6"/>
-                            <constraint firstItem="xds-IP-GUh" firstAttribute="trailing" secondItem="hz1-p7-S6a" secondAttribute="trailing" constant="15" id="q4d-h7-LAw"/>
+                            <constraint firstItem="hz1-p7-S6a" firstAttribute="top" secondItem="6YZ-gR-Bj3" secondAttribute="top" constant="20" id="EbB-LW-AzW"/>
+                            <constraint firstItem="hz1-p7-S6a" firstAttribute="leading" secondItem="6YZ-gR-Bj3" secondAttribute="leading" constant="15" id="YMk-fX-7OS"/>
+                            <constraint firstItem="6YZ-gR-Bj3" firstAttribute="bottom" secondItem="hz1-p7-S6a" secondAttribute="bottom" constant="15" id="osP-TS-Ze6"/>
+                            <constraint firstItem="6YZ-gR-Bj3" firstAttribute="trailing" secondItem="hz1-p7-S6a" secondAttribute="trailing" constant="15" id="q4d-h7-LAw"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="xds-IP-GUh"/>
+                        <viewLayoutGuide key="safeArea" id="6YZ-gR-Bj3"/>
                     </view>
                     <navigationItem key="navigationItem" title="综合" id="MJ7-3L-3cV">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="bX7-4J-Hsj">
@@ -269,7 +269,7 @@
             <objects>
                 <navigationController storyboardIdentifier="chart_comprehensive" id="FwQ-OK-E2w" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="X1o-5h-yM0">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <userDefinedRuntimeAttributes>
@@ -288,11 +288,11 @@
             <objects>
                 <viewController title="综合" id="kBG-cp-V8a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DFC-k1-2Cf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nwG-K2-iu6" customClass="AnimatableView" customModule="IBAnimatable">
-                                <rect key="frame" x="15" y="20" width="345" height="568"/>
+                                <rect key="frame" x="15" y="20" width="345" height="655"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -305,12 +305,12 @@
                         </subviews>
                         <color key="backgroundColor" name="color_tableView_bg"/>
                         <constraints>
-                            <constraint firstItem="IGI-GN-GIq" firstAttribute="bottom" secondItem="nwG-K2-iu6" secondAttribute="bottom" constant="15" id="9kH-XR-I96"/>
-                            <constraint firstItem="IGI-GN-GIq" firstAttribute="trailing" secondItem="nwG-K2-iu6" secondAttribute="trailing" constant="15" id="Dmo-cp-ulP"/>
-                            <constraint firstItem="nwG-K2-iu6" firstAttribute="top" secondItem="IGI-GN-GIq" secondAttribute="top" constant="20" id="EIC-YO-FIK"/>
-                            <constraint firstItem="nwG-K2-iu6" firstAttribute="leading" secondItem="IGI-GN-GIq" secondAttribute="leading" constant="15" id="Q79-RP-Eb9"/>
+                            <constraint firstItem="D3g-kN-Lfm" firstAttribute="bottom" secondItem="nwG-K2-iu6" secondAttribute="bottom" constant="15" id="9kH-XR-I96"/>
+                            <constraint firstItem="D3g-kN-Lfm" firstAttribute="trailing" secondItem="nwG-K2-iu6" secondAttribute="trailing" constant="15" id="Dmo-cp-ulP"/>
+                            <constraint firstItem="nwG-K2-iu6" firstAttribute="top" secondItem="D3g-kN-Lfm" secondAttribute="top" constant="20" id="EIC-YO-FIK"/>
+                            <constraint firstItem="nwG-K2-iu6" firstAttribute="leading" secondItem="D3g-kN-Lfm" secondAttribute="leading" constant="15" id="Q79-RP-Eb9"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="IGI-GN-GIq"/>
+                        <viewLayoutGuide key="safeArea" id="D3g-kN-Lfm"/>
                     </view>
                     <navigationItem key="navigationItem" title="综合" id="Hzj-MZ-wjh">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="hHO-a0-CYr">
@@ -340,7 +340,7 @@
             <objects>
                 <navigationController storyboardIdentifier="chart_humidty" id="lI3-TY-rFS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="dda-HO-Xal">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <userDefinedRuntimeAttributes>

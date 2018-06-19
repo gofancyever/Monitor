@@ -10,11 +10,30 @@ import UIKit
 import Reusable
 import CenteredCollectionView
 class MonitoringStationDetailController: UITableViewController,StoryboardSceneBased {
+    
     static var sceneStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    
 
     @IBOutlet weak var collectionView: UICollectionView!
     var centeredCollectionViewFlowLayout: CenteredCollectionViewFlowLayout!
     let cellPercentWidth: CGFloat = 0.9
+    fileprivate lazy var listLayout:CenteredCollectionViewFlowLayout = {
+        let layout = CenteredCollectionViewFlowLayout()
+        layout.itemSize = CGSize(
+            width: collectionView.bounds.width * cellPercentWidth,
+            height: collectionView.bounds.height
+        )
+        return layout
+    }()
+    fileprivate lazy var gardLayout:CenteredCollectionViewFlowLayout = {
+        let layout = CenteredCollectionViewFlowLayout()
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(
+            width: collectionView.bounds.width/3 - 50,
+            height:collectionView.bounds.width/3 - 50
+        )
+        return layout
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,23 +46,20 @@ class MonitoringStationDetailController: UITableViewController,StoryboardSceneBa
         collectionView.register(cellType: HumidityCell.self)
         collectionView.register(cellType: ComprehensiveCell.self)
         collectionView.decelerationRate = UIScrollViewDecelerationRateFast
+        collectionView.collectionViewLayout = listLayout
         // Get rid of scrolling indicators
-        centeredCollectionViewFlowLayout = collectionView.collectionViewLayout as! CenteredCollectionViewFlowLayout
-        centeredCollectionViewFlowLayout.itemSize = CGSize(
-            width: collectionView.bounds.width * cellPercentWidth,
-            height: collectionView.bounds.height
-        )
+       
         // Configure the optional inter item spacing (OPTIONAL STEP)
 //        centeredCollectionViewFlowLayout.minimumLineSpacing = 20
 
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func interfaceSwitch(_ sender: UIButton) {
+        self.collectionView.collectionViewLayout.invalidateLayout()
+    
     }
+  
 }
 extension MonitoringStationDetailController:UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -10,6 +10,10 @@
 		8C9CBAA43BA357E314F18A3C /* Pods_MonitorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA8B09FB48A16CEC75E6301 /* Pods_MonitorUITests.framework */; };
 		B0520B4045B47C874A7128FD /* Pods_Monitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DAE136702AB37A7670D02A /* Pods_Monitor.framework */; };
 		BC1C435020CF9ED500C7D052 /* BaseLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1C434F20CF9ED500C7D052 /* BaseLineChartView.swift */; };
+		BC23793620D394A8000ED182 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23793520D394A8000ED182 /* UIViewExtension.swift */; };
+		BC23793820D3972C000ED182 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23793720D3972C000ED182 /* Util.swift */; };
+		BC23793D20D3A68C000ED182 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23793C20D3A68C000ED182 /* CollectionViewController.swift */; };
+		BC23793F20D3A745000ED182 /* WobblePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23793E20D3A745000ED182 /* WobblePresenter.swift */; };
 		BC3FF47820C90F9F008F4F8E /* TemperatureStatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */; };
 		BC3FF47920C90F9F008F4F8E /* TemperatureStatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */; };
 		BC71A0C020B8037000D30A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71A0BF20B8037000D30A3D /* AppDelegate.swift */; };
@@ -72,6 +76,10 @@
 		8ECCB9347455BA0DABF06584 /* Pods-MonitorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorUITests/Pods-MonitorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABDBCB9C62FFC021817F3684 /* Pods-MonitorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorTests/Pods-MonitorTests.release.xcconfig"; sourceTree = "<group>"; };
 		BC1C434F20CF9ED500C7D052 /* BaseLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLineChartView.swift; sourceTree = "<group>"; };
+		BC23793520D394A8000ED182 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		BC23793720D3972C000ED182 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		BC23793C20D3A68C000ED182 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		BC23793E20D3A745000ED182 /* WobblePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WobblePresenter.swift; sourceTree = "<group>"; };
 		BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureStatisticsCell.swift; sourceTree = "<group>"; };
 		BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureStatisticsCell.xib; sourceTree = "<group>"; };
 		BC71A0BC20B8037000D30A3D /* Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +108,6 @@
 		BC751CAC20BD33110028441B /* ComprehensiveCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComprehensiveCell.xib; sourceTree = "<group>"; };
 		BC751CB020BD36EF0028441B /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		BC751CB220BD57F90028441B /* StatisticsDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsDetailController.swift; sourceTree = "<group>"; };
-		BC7558BC20CF94CA00E4A030 /* Chart.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Chart.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		BC81A73020BE2F7700DB3692 /* style.data */ = {isa = PBXFileReference; lastKnownFileType = file; path = style.data; sourceTree = "<group>"; };
 		BC81A73220BE371E00DB3692 /* WarningSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningSettingController.swift; sourceTree = "<group>"; };
 		BC81A73420BE3C1900DB3692 /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
@@ -173,7 +180,6 @@
 		BC71A0B320B8036F00D30A3D = {
 			isa = PBXGroup;
 			children = (
-				BC7558BC20CF94CA00E4A030 /* Chart.playground */,
 				BC71A0BE20B8037000D30A3D /* Monitor */,
 				BC71A0D320B8037200D30A3D /* MonitorTests */,
 				BC71A0DE20B8037200D30A3D /* MonitorUITests */,
@@ -231,6 +237,8 @@
 		BC751CAF20BD36D30028441B /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				BC23793E20D3A745000ED182 /* WobblePresenter.swift */,
+				BC23793C20D3A68C000ED182 /* CollectionViewController.swift */,
 				BC1C434F20CF9ED500C7D052 /* BaseLineChartView.swift */,
 				BC751CB020BD36EF0028441B /* BaseNavigationController.swift */,
 				BC95F3A820CFBF5900268DD5 /* BaseRadarChartView.swift */,
@@ -343,6 +351,8 @@
 		BC81A74420BE866900DB3692 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				BC23793720D3972C000ED182 /* Util.swift */,
+				BC23793520D394A8000ED182 /* UIViewExtension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -525,21 +535,25 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Monitor/Pods-Monitor-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CenteredCollectionView/CenteredCollectionView.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/CollectionKit/CollectionKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/IBAnimatable/IBAnimatable.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+				"${BUILT_PRODUCTS_DIR}/YetAnotherAnimationLibrary/YetAnotherAnimationLibrary.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CenteredCollectionView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IBAnimatable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YetAnotherAnimationLibrary.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -619,11 +633,15 @@
 				BC95F3A920CFBF5900268DD5 /* BaseRadarChartView.swift in Sources */,
 				BC751CA820BD314F0028441B /* LargeValueFormatter.swift in Sources */,
 				BC751CB120BD36EF0028441B /* BaseNavigationController.swift in Sources */,
+				BC23793D20D3A68C000ED182 /* CollectionViewController.swift in Sources */,
 				BC751CAA20BD315A0028441B /* IntAxisValueFormatter.swift in Sources */,
 				BC8E4E1220BC0C3E0075ACB5 /* MonitoringStationCell.swift in Sources */,
+				BC23793820D3972C000ED182 /* Util.swift in Sources */,
 				BC81A73320BE371E00DB3692 /* WarningSettingController.swift in Sources */,
 				BC751C9E20BD29C90028441B /* DayAxisValueFormatter.swift in Sources */,
 				BC71A0C020B8037000D30A3D /* AppDelegate.swift in Sources */,
+				BC23793620D394A8000ED182 /* UIViewExtension.swift in Sources */,
+				BC23793F20D3A745000ED182 /* WobblePresenter.swift in Sources */,
 				BC751CB320BD57F90028441B /* StatisticsDetailController.swift in Sources */,
 				BC8E4E0E20BC03E50075ACB5 /* MapController.swift in Sources */,
 				BC751CA120BD2EBF0028441B /* HealthStatisticsCell.swift in Sources */,
@@ -810,10 +828,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Monitor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.Monitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaof/Documents/Monitor/Monitor/Monitor-header.h";
@@ -836,10 +851,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Monitor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.Monitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaof/Documents/Monitor/Monitor/Monitor-header.h";
@@ -856,11 +868,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.MonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -877,11 +885,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.MonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -897,11 +901,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.MonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -917,11 +917,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.MonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

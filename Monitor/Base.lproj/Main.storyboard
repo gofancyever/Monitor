@@ -13,53 +13,6 @@
     </dependencies>
     <scenes>
         <!--Item-->
-        <scene sceneID="Zzo-B7-lAg">
-            <objects>
-                <tableViewController id="CnY-5Y-vNs" customClass="MonitoringStationController" customModule="Monitor" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="A4r-4y-ogb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="106" id="zB3-WL-jJz">
-                                <rect key="frame" x="0.0" y="28" width="375" height="106"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zB3-WL-jJz" id="0dL-Gk-xAS">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="112" id="m7p-Nx-bfT">
-                                <rect key="frame" x="0.0" y="134" width="375" height="112"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m7p-Nx-bfT" id="Vpy-yu-xJp">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="111.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="118" id="E60-H3-Ved">
-                                <rect key="frame" x="0.0" y="246" width="375" height="118"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E60-H3-Ved" id="lQY-kV-SdL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="CnY-5Y-vNs" id="eEk-N3-tz7"/>
-                            <outlet property="delegate" destination="CnY-5Y-vNs" id="sqh-PX-vsL"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Je0-gs-Udt"/>
-                    <navigationItem key="navigationItem" id="S6K-Tr-TR3"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zIO-xq-UTy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1044" y="1042"/>
-        </scene>
-        <!--Item-->
         <scene sceneID="S3j-s2-M7e">
             <objects>
                 <navigationController id="DGL-b0-fbj" customClass="BaseNavigationController" customModule="Monitor" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="CnY-5Y-vNs" kind="relationship" relationship="rootViewController" id="Az2-zN-oQ8"/>
+                        <segue destination="qWa-hk-PDA" kind="relationship" relationship="rootViewController" id="SyS-uf-e3d"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oQ7-Ej-WHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,6 +109,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iKB-i5-Yzf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="97" y="253"/>
+        </scene>
+        <!--Monitoring Station Controller-->
+        <scene sceneID="tYa-el-6mb">
+            <objects>
+                <viewController id="qWa-hk-PDA" customClass="MonitoringStationController" customModule="Monitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XuE-Ta-l30">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="364-3M-3kj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="smL-De-h0g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N8Q-o4-TBx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1076" y="1040"/>
         </scene>
         <!--Monitoring Station Detail Controller-->
         <scene sceneID="pyu-W1-QR6">
@@ -265,9 +234,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfj-PE-L48">
+                                                    <rect key="frame" x="314" y="7" width="46" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="interfaceSwitch:" destination="EZl-kY-YIU" eventType="touchUpInside" id="Faa-U2-OiR"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="9WU-72-0d9" firstAttribute="centerY" secondItem="1cL-RE-lyb" secondAttribute="centerY" id="NIw-eD-tFY"/>
+                                                <constraint firstItem="kfj-PE-L48" firstAttribute="centerY" secondItem="1cL-RE-lyb" secondAttribute="centerY" id="VZA-8p-CuH"/>
+                                                <constraint firstAttribute="trailing" secondItem="kfj-PE-L48" secondAttribute="trailing" constant="15" id="XM1-Z2-gqq"/>
                                                 <constraint firstItem="9WU-72-0d9" firstAttribute="leading" secondItem="1cL-RE-lyb" secondAttribute="leadingMargin" constant="15" id="vuf-Rj-boB"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -282,7 +260,7 @@
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LBV-Ck-Z44">
                                                     <rect key="frame" x="0.0" y="19" width="375" height="298"/>
                                                     <color key="backgroundColor" name="color_tableView_bg"/>
-                                                    <collectionViewLayout key="collectionViewLayout" id="Ceu-Ie-PIA" customClass="CenteredCollectionViewFlowLayout" customModule="CenteredCollectionView"/>
+                                                    <collectionViewLayout key="collectionViewLayout" id="PSy-k3-Ryq"/>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tAh-qA-rc4">
                                                             <rect key="frame" x="37" y="0.0" width="301" height="279"/>

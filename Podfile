@@ -16,6 +16,8 @@ target 'Monitor' do
     pod 'Hero'
     pod 'SwiftyGif'
     pod 'SnapKit'
+    pod 'CollectionKit'
+    pod 'YetAnotherAnimationLibrary'
   target 'MonitorTests' do
     inherit! :search_paths
     # Pods for testing
