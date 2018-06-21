@@ -9,18 +9,19 @@
 import UIKit
 import Reusable
 import Charts
-class HumidityCell: UICollectionViewCell,NibReusable {
-    @IBOutlet var chartView: BarChartView!
+class HumidityCell: BaseStatisticsCell,NibReusable {
+//    @IBOutlet var chartView: BarChartView!
     override func awakeFromNib() {
         super.awakeFromNib()
     
 //        chartView.delegate = self
-        
-        chartView.chartDescription?.enabled = false
-        chartView.maxVisibleCount = 60
-        chartView.pinchZoomEnabled = false
-        chartView.drawBarShadowEnabled = false
-        
+        if let chartView = chartView as? BarChartView {
+            chartView.chartDescription?.enabled = false
+            chartView.maxVisibleCount = 60
+            chartView.pinchZoomEnabled = false
+            chartView.drawBarShadowEnabled = false
+            chartView.fitBars = true
+        }
         let xAxis = chartView.xAxis
         xAxis.labelPosition = .bottom
         
@@ -49,7 +50,6 @@ class HumidityCell: UICollectionViewCell,NibReusable {
             
             let data = BarChartData(dataSet: set1)
             chartView.data = data
-            chartView.fitBars = true
         }
         
         chartView.setNeedsDisplay()

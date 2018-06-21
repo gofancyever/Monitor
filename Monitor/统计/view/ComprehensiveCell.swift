@@ -9,11 +9,12 @@
 import UIKit
 import Charts
 import Reusable
-class ComprehensiveCell: UICollectionViewCell,NibReusable {
+class ComprehensiveCell: BaseStatisticsCell,NibReusable {
 
-    @IBOutlet var chartView: LineChartView!
+//    @IBOutlet var chartView: LineChartView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        if let chartView = chartView as? LineChartView {
         chartView.chartDescription?.enabled = false
         chartView.dragEnabled = true
         chartView.setScaleEnabled(true)
@@ -50,7 +51,7 @@ class ComprehensiveCell: UICollectionViewCell,NibReusable {
         
         self.setDataCount(20, range: UInt32(30))
 
-        
+        }
         chartView.animate(xAxisDuration: 2.5)
     }
     func setDataCount(_ count: Int, range: UInt32) {

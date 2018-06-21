@@ -27,6 +27,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="chart_wind"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="fade"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>

@@ -76,7 +76,7 @@
             <viewLayoutGuide key="safeArea" id="RiQ-P0-6N4"/>
             <size key="customSize" width="205" height="204"/>
             <connections>
-                <outlet property="chartView" destination="XoC-bz-RfD" id="WOf-BY-IeV"/>
+                <outlet property="chartView" destination="XoC-bz-RfD" id="oB4-n0-9aR"/>
             </connections>
             <point key="canvasLocation" x="131.5" y="323"/>
         </collectionViewCell>

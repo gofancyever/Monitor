@@ -234,18 +234,9 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kfj-PE-L48">
-                                                    <rect key="frame" x="314" y="7" width="46" height="30"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <connections>
-                                                        <action selector="interfaceSwitch:" destination="EZl-kY-YIU" eventType="touchUpInside" id="Faa-U2-OiR"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="9WU-72-0d9" firstAttribute="centerY" secondItem="1cL-RE-lyb" secondAttribute="centerY" id="NIw-eD-tFY"/>
-                                                <constraint firstItem="kfj-PE-L48" firstAttribute="centerY" secondItem="1cL-RE-lyb" secondAttribute="centerY" id="VZA-8p-CuH"/>
-                                                <constraint firstAttribute="trailing" secondItem="kfj-PE-L48" secondAttribute="trailing" constant="15" id="XM1-Z2-gqq"/>
                                                 <constraint firstItem="9WU-72-0d9" firstAttribute="leading" secondItem="1cL-RE-lyb" secondAttribute="leadingMargin" constant="15" id="vuf-Rj-boB"/>
                                             </constraints>
                                         </tableViewCellContentView>

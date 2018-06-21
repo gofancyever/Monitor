@@ -15,16 +15,17 @@ private class CubicLineSampleFillFormatter: IFillFormatter {
         return -10
     }
 }
-class WindStatisticsCell: UICollectionViewCell, NibReusable {
-    @IBOutlet weak var chartView: BaseLineChartView!
+class WindStatisticsCell: BaseStatisticsCell, NibReusable {
+//    @IBOutlet weak var chartView: BaseLineChartView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        chartView.delegate = self
-        chartView.maxHighlightDistance = 300
-        chartView.showWarningLine = true
-        chartView.warningLineLabel = "警戒风速"
-        chartView.warningLineLimit = 50
-        
+        if let chartView = chartView as? BaseLineChartView {
+            chartView.delegate = self
+            chartView.maxHighlightDistance = 300
+            chartView.showWarningLine = true
+            chartView.warningLineLabel = "警戒风速"
+            chartView.warningLineLimit = 50
+        }
         
         self.setDataCount(Int(20 + 1), range: UInt32(100))
         

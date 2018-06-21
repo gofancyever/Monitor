@@ -9,8 +9,8 @@
 import UIKit
 import Charts
 import Reusable
-class HealthStatisticsCell: UICollectionViewCell,NibReusable {
-    @IBOutlet weak var chartView: BaseRadarChartView!
+class HealthStatisticsCell: BaseStatisticsCell,NibReusable {
+//    @IBOutlet weak var chartView: BaseRadarChartView!
     
     let activities = ["氮", "钾", "氨"]
     override func awakeFromNib() {

@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 import CenteredCollectionView
+import Hero
 class MonitoringStationDetailController: UITableViewController,StoryboardSceneBased {
     
     static var sceneStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -25,16 +26,7 @@ class MonitoringStationDetailController: UITableViewController,StoryboardSceneBa
         )
         return layout
     }()
-    fileprivate lazy var gardLayout:CenteredCollectionViewFlowLayout = {
-        let layout = CenteredCollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(
-            width: collectionView.bounds.width/3 - 50,
-            height:collectionView.bounds.width/3 - 50
-        )
-        return layout
-    }()
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "地块详情"
@@ -55,16 +47,12 @@ class MonitoringStationDetailController: UITableViewController,StoryboardSceneBa
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
     }
-    @IBAction func interfaceSwitch(_ sender: UIButton) {
-        self.collectionView.collectionViewLayout.invalidateLayout()
-    
-    }
-  
 }
 extension MonitoringStationDetailController:UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == 0 {
             let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: ComprehensiveCell.self)
@@ -82,8 +70,10 @@ extension MonitoringStationDetailController:UICollectionViewDelegate,UICollectio
         }
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let nav = UIStoryboard(name: "Statistics", bundle: nil).instantiateViewController(withIdentifier: "chart_health")
-        self.present(nav, animated: true, completion: nil)
+        let cell = collectionView.cellForItem(at: indexPath) as! BaseStatisticsCell
+        if let heroID = cell.chartView.hero.id {
+            let nav = UIStoryboard(name: "Statistics", bundle: nil).instantiateViewController(withIdentifier: heroID)
+            self.present(nav, animated: true, completion: nil)
+        }
     }
 }

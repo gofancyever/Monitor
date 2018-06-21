@@ -16,6 +16,7 @@
 		BC23793F20D3A745000ED182 /* WobblePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23793E20D3A745000ED182 /* WobblePresenter.swift */; };
 		BC3FF47820C90F9F008F4F8E /* TemperatureStatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */; };
 		BC3FF47920C90F9F008F4F8E /* TemperatureStatisticsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */; };
+		BC6F391B20D8A3EA007C153B /* BaseStatisticsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6F391A20D8A3EA007C153B /* BaseStatisticsCell.swift */; };
 		BC71A0C020B8037000D30A3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71A0BF20B8037000D30A3D /* AppDelegate.swift */; };
 		BC71A0C520B8037000D30A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC71A0C320B8037000D30A3D /* Main.storyboard */; };
 		BC71A0C720B8037200D30A3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC71A0C620B8037200D30A3D /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		BC23793E20D3A745000ED182 /* WobblePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WobblePresenter.swift; sourceTree = "<group>"; };
 		BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureStatisticsCell.swift; sourceTree = "<group>"; };
 		BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureStatisticsCell.xib; sourceTree = "<group>"; };
+		BC6F391A20D8A3EA007C153B /* BaseStatisticsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStatisticsCell.swift; sourceTree = "<group>"; };
 		BC71A0BC20B8037000D30A3D /* Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC71A0BF20B8037000D30A3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC71A0C420B8037000D30A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				BC751CAC20BD33110028441B /* ComprehensiveCell.xib */,
 				BC3FF47620C90F9F008F4F8E /* TemperatureStatisticsCell.swift */,
 				BC3FF47720C90F9F008F4F8E /* TemperatureStatisticsCell.xib */,
+				BC6F391A20D8A3EA007C153B /* BaseStatisticsCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -640,6 +643,7 @@
 				BC81A73320BE371E00DB3692 /* WarningSettingController.swift in Sources */,
 				BC751C9E20BD29C90028441B /* DayAxisValueFormatter.swift in Sources */,
 				BC71A0C020B8037000D30A3D /* AppDelegate.swift in Sources */,
+				BC6F391B20D8A3EA007C153B /* BaseStatisticsCell.swift in Sources */,
 				BC23793620D394A8000ED182 /* UIViewExtension.swift in Sources */,
 				BC23793F20D3A745000ED182 /* WobblePresenter.swift in Sources */,
 				BC751CB320BD57F90028441B /* StatisticsDetailController.swift in Sources */,
@@ -828,7 +832,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Monitor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.Monitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaof/Documents/Monitor/Monitor/Monitor-header.h";
@@ -851,7 +858,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = Monitor/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.Monitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gaof/Documents/Monitor/Monitor/Monitor-header.h";
@@ -868,7 +878,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.MonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -885,7 +899,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.MonitorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -901,7 +919,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.MonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -917,7 +939,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Monitor.gaooof.com.MonitorUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
